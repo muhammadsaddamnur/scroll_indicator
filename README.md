@@ -1,14 +1,29 @@
-# scroll_indicator
 
-A new Flutter package project.
+# Scroll_Indicator
 
-## Getting Started
+Scroll indicator inspired by the Shopee application.  
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Usage
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+ScrollIndicator(
+	scrollController: scrollController,
+	width: 50,
+	height: 5,
+	indicatorWidth: 20,
+	decoration: BoxDecoration(
+	borderRadius: BorderRadius.circular(10),
+	color: Colors.grey[300]),
+	indicatorDecoration: BoxDecoration(
+	color: Colors.deepOrange,
+	borderRadius: BorderRadius.circular(10)),
+),
+```
+
+## Demo
+![scroll indicator](https://raw.githubusercontent.com/muhammadsaddamnur/scroll_indicator/main/scroll_indicator.gif)
+
+## Support me on Saweria
+[https://saweria.co/saddamnur](https://saweria.co/saddamnur)
+
+![saweria](https://raw.githubusercontent.com/muhammadsaddamnur/scroll_indicator/main/saweria.png)
