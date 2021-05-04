@@ -1,5 +1,5 @@
 name: scroll_indicator
-description: A new Flutter package project.
+description: Scroll indicator with listening controller of listview or gridview. 
 version: 0.0.1
 author:
 homepage:
