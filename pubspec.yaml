@@ -1,8 +1,7 @@
 name: scroll_indicator
 description: Scroll indicator with listening controller of listview or gridview. 
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/muhammadsaddamnur/scroll_indicator
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
