@@ -35,12 +35,6 @@ class _ScrollIndicatorState extends State<ScrollIndicator> {
     super.initState();
   }
 
-  @override
-  void dispose() {
-    widget.scrollController.dispose();
-    super.dispose();
-  }
-
   void _scrollListener() {
     setState(() {
       currentPixels = widget.scrollController.position.pixels;
