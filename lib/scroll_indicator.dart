@@ -9,8 +9,10 @@ class ScrollIndicator extends StatefulWidget {
   final double width, height, indicatorWidth;
   final Decoration decoration, indicatorDecoration;
   final AlignmentGeometry alignment;
+  final bool filled;
   ScrollIndicator(
       {required this.scrollController,
+      required this.filled;
       this.width = 100,
       this.height = 10,
       this.indicatorWidth = 20,
@@ -56,10 +58,10 @@ class _ScrollIndicatorState extends State<ScrollIndicator> {
           fit: StackFit.expand,
           children: [
             Positioned(
-                left: move,
+                 left: widget.filled ? 0 : move,
                 child: Container(
                   height: widget.height,
-                  width: widget.indicatorWidth,
+                  width: widget.filled ?  move + widget.indicatorWidth : widget.indicatorWidth,
                   decoration: widget.indicatorDecoration,
                 )),
           ],
